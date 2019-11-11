@@ -9,15 +9,15 @@ function RegNet=SPIDER(RegNet, GeneCoReg, TFCoop, alpha);
 %
 % Inputs:
 %               alpha        : parameter that determines the level of message-passing
-%		RegNet       : motif prior of gene-TF regulatory network
+%               RegNet       : motif prior of gene-TF regulatory network
 %               GeneCoReg    : Optional input for SPIDER: Identify matrix of size GeneNames by GeneNames is used as input by default where gene expression information is absent
 %               TFCoop       : Optional input for SPIDER: Identify matrix of size TFNames by TFNames is used as input by default if PPI network is not used as input
-%               TFCoop       : PPI binding between transcription factors
+%            
 
 
 % 
 % Outputs:
-%               SpiderNet     : Predicted TF-gene gene complete regulatory network for cell line using SPIDER and message-passing from PANDA as a matrix of size (t,g).
+%               RegNet     : Predicted TF-gene gene complete regulatory network for cell line using SPIDER and message-passing from PANDA as a matrix of size (t,g).
 %
 % Authors: 
 %               Abhijeet Sonawane, Kimberly Glass
@@ -62,3 +62,4 @@ while(hamming>0.001)
 end
 runtime=toc;
 fprintf('Running PANDA on %d Genes and %d TFs took %f seconds!\n', NumGenes, NumTFs, runtime);
+end

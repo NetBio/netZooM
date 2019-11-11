@@ -137,3 +137,4 @@ for(cnt=1:length(AnnoData{1}))
 	fprintf(fid, '%s\t%u\t%u\t%s\n', AnnoData{1}{cnt}, AnnoData{2}(cnt), AnnoData{3}(cnt), AnnoData{4}{cnt});
 end
 fclose(fid);
+end

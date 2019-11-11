@@ -59,3 +59,4 @@ Adj=full(Adj);
 % clean-up
 eval(['!rm -f ', rtag1]);
 eval(['!rm -f ', rtag2]);
+end

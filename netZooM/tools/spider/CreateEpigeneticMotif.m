@@ -50,3 +50,4 @@ end
 % update to user
 timelapse=toc;
 disp(['Integrating motif and epigenetic information took ', num2str(timelapse), ' seconds.']);
+end
