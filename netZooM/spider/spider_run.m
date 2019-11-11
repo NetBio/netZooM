@@ -1,4 +1,4 @@
-function AgNet=spider_run(libpath, bedtoolspath, alpha, motifhitfile,  annofile, chrinfo, ranges, regfile, outtag,motifdir, epifile )
+function SpiderNet=spider_run(libpath, bedtoolspath, alpha, motifhitfile,  annofile, chrinfo, ranges, regfile, outtag,motifdir, epifile )
 
 % Description:
 % 		Using SPIDER to infer epigenetically-informed gene regulatory network. 
