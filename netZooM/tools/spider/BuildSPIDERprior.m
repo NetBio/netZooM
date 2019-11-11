@@ -1,4 +1,4 @@
-function [Adj, TFNames, GeneNames]=BuildPriorFromRegions(motifhitfile, regfile, bedtoolspath);
+function [Adj, TFNames, GeneNames]=BuildSPIDERprior(motifhitfile, regfile, bedtoolspath);
 
 % Description:
 %               1. Create input prior network by interating DNase-seq information with motif data (motif prior)
